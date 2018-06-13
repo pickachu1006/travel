@@ -1,0 +1,98 @@
+.header{
+    background: #424242;
+    height:300px;
+    text-align: center;
+}
+.header .logo{
+    background-image:url(../img/BMICLogo.png);
+    width:117px;
+    height:117px;
+    display: inline-block;
+    margin:92px 0;
+}
+.input-data{
+    color:#FFD366 ;
+    display: inline-block;
+    vertical-align: top;
+    margin:74px 0 0 97px;
+}
+.input-data input{
+    width:250px;
+    height: 40px;;
+    background: rgba(255,255,255,0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    display: block;
+    font-size:24px;
+    color:white;
+    margin:5px 0;
+}
+.input-data label{
+    font-size:18px;
+    letter-spacing: 10px;
+}
+.result{
+    background-color:#FFD366 ;
+    border-radius: 50%;
+    font-size:24px;
+    font-family: PingFangTC-Regular;
+    width:120px;
+    height: 120px;
+    top:92px;
+    left:690px;
+    vertical-align: top;
+    margin:92px 0 0 53px;
+    cursor: pointer;
+}
+
+.main{
+    text-align: center;
+    background-color: rgb(209, 209, 209);
+    padding-bottom: 66px;
+}
+.main h2{
+    padding:48px 0 36px 0;
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #424242;
+}
+.bmiRecord li{
+    width:624px;
+    margin:8px auto;
+    background-color: #ffff;
+}
+.bmiRecord span{
+    display: inline-block;
+    margin: 21px 20px;
+    font-size: 20px;
+}
+.footer{
+    background-color: #FFD366;
+    height:90px;
+}
+.blue{
+    border-left:solid 7px #31BAF9;
+}
+.green{
+    border-left:solid 7px #86D73F;
+}
+
+.orange-fat{
+    border-left:solid 7px #FF982D;
+}
+
+.btn-blue{
+    border:solid 7px #31BAF9;
+    background-color:#424242;
+    color:#31BAF9;
+}
+.btn-green{
+    border:solid 7px #86D73F;
+    background-color:#424242;
+    color:#86D73F;
+}
+.btn-orange-fat{
+    border:solid 7px #FF982D;
+    background-color:#424242;
+    color:#FF982D;
+}
