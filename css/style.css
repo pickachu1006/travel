@@ -1,0 +1,146 @@
+.banner {
+  width: 1024px;
+  height: 380px;
+  background-image: url(../images/Hero.png);
+  overflow: hidden; }
+
+.banner h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 89px; }
+
+.filter {
+  text-align: center;
+  padding-top: 96px; }
+
+.filter select {
+  width: 452px;
+  height: 48px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px; }
+
+.header {
+  margin: 0 auto;
+  width: 1024px;
+  position: relative; }
+
+.hotplace {
+  position: absolute;
+  top: 352px;
+  left: 112px;
+  width: 800px;
+  height: 112px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 1px 3px 0;
+          box-shadow: 0 1px 3px 0;
+  border-radius: 5px; }
+
+.hotplace li {
+  margin: 0 0 18px 51px;
+  display: inline-block;
+  text-align: center;
+  padding: 11px 0;
+  width: 130px;
+  font-size: 20px;
+  font-family: PingFangTC-Regular;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.hotplace p {
+  font-size: 18px;
+  font-family: AppleSystemUIFont;
+  margin: 20px 0 16px 26px; }
+
+.main {
+  margin-top: 133px; }
+
+.seperator {
+  margin: 0 auto;
+  width: 1024px;
+  border-top: 1px solid #559AC8; }
+
+.seperator i {
+  display: block;
+  color: #559AC8;
+  text-align: center; }
+
+.place-name {
+  font-size: 36px;
+  color: #8A82CC;
+  font-family: SFNSDisplay;
+  text-align: center;
+  margin: 65px 0 24px 0; }
+
+.place-detail {
+  text-align: center; }
+
+.place-detail li {
+  position: relative;
+  display: inline-block;
+  height: 273px;
+  width: 464px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  margin: 18px 8px; }
+
+.place-detail .top {
+  height: 155px;
+  width: 464px;
+  overflow: hidden; }
+
+.place-detail .top-text {
+  display: inline-block;
+  position: absolute;
+  top: 117px;
+  left: 22px;
+  font-family: SFNSDisplay;
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 440px;
+  text-align: left; }
+
+.place-detail .top-text .big {
+  display: inline-block; }
+
+.place-detail .top-text .small {
+  display: inline-block;
+  font-family: PingFangTC-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: absolute;
+  right: 24px;
+  position: absolute;
+  right: 24px;
+  top: 8px; }
+
+.bottom .icon {
+  position: relative;
+  text-align: left;
+  margin: 10px 0 0 23px; }
+
+.bottom img {
+  margin-right: 9px; }
+
+.tag {
+  position: absolute;
+  right: 24px;
+  top: 0; }
+
+.footer {
+  background-color: #559AC8;
+  padding: 23px 0; }
+
+.footer p {
+  text-align: center;
+  margin: 7px 0;
+  font-size: 14px;
+  font-family: AppleSystemUIFont;
+  letter-spacing: 5px; }
+
+/*# sourceMappingURL=style.css.map */
