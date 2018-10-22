@@ -126,6 +126,11 @@ gulp.task('image-min', () =>
     gulp.watch('./source/**/*.js', ['babel']);
   });
 
+  gulp.task('deploy',function(){
+    return gulp.src('./public/**/*')
+    .pipe($.ghPages())
+  })
+
   gulp.task('build',gulpSequence('clean','jade','sass','babel','vendorJS'))
 
   gulp.task('default',['jade','sass','babel','vendorJS','browser-sync','image-min','watch']);
