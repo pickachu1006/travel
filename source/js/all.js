@@ -1,7 +1,7 @@
 var place = document.getElementById('zone');
 var hotplace = document.querySelector('.hotplace');
 var title = document.querySelector('.place-name');
-var detail = document.querySelector('.place-detail');
+var detail = document.querySelector('.place-detail .row');
 var str="";
 
 //selector資料
@@ -55,7 +55,38 @@ function getData(){
             var len = a.length;
             for(let i = 0;i<len;i++){
                 if(a[i].Zone==str){
-                detail.innerHTML+='<li><img class="top" src="'+a[i].Picture1+'"><div class="top-text"><div class="big">'+a[i].Name+'</div><div class="small">'+a[i].Zone+'</div></div></div><div class="bottom"><div class="icon"> <img src="images/clock.png" alt=""><span>'+a[i].Opentime+'</span></div><div class="icon"><img src="images/pin.png" alt=""><span>'+a[i].Add+'</span></div><div class="icon"><div class="phone"><img src="images/phone.png" alt=""><span>'+a[i].Tel+'</span></div><div class="tag"><img src="images/tag.png" alt=""><span>'+a[i].Ticketinfo+'</span></div></div></div></li>';
+                // detail.innerHTML+='<li><img class="top" src="'+a[i].Picture1+'"><div class="top-text"><div class="big">'+a[i].Name+'</div><div class="small">'+a[i].Zone+'</div></div></div><div class="bottom"><div class="icon"> <img src="images/clock.png" alt=""><span>'+a[i].Opentime+'</span></div><div class="icon"><img src="images/pin.png" alt=""><span>'+a[i].Add+'</span></div><div class="icon"><div class="phone"><img src="images/phone.png" alt=""><span>'+a[i].Tel+'</span></div><div class="tag"><img src="images/tag.png" alt=""><span>'+a[i].Ticketinfo+'</span></div></div></div></li>';
+                detail.innerHTML+=`
+                <div class="col-md-6 my-3">
+                 <div class="card">
+                    <img src="${a[i].Picture1}" alt="Card image cap" class="card-img-top">
+                        <div class="top-text d-flex justify-content-between px-3 w-100">
+                            <div class="big">${a[i].Name}</div>
+                            <div class="small">${a[i].Zone}</div>
+                        </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <img src="images/clock.png" alt="" class="mr-2">
+                            <span>${a[i].Opentime}</span>
+                        </div>
+                        <div class="card-text my-1">
+                            <img src="images/pin.png" alt="" class="mr-2">
+                            <span>${a[i].Add}</span>
+                        </div>
+                        <div class="card-text d-flex justify-content-between w-100">
+                            <div class="phone">
+                                <img src="images/phone.png" alt="" class="mr-2">
+                                <span>${a[i].Tel}8</span>
+                        </div>
+                        <div class="tag">
+                            <img src="images/tag.png" alt="" class="mr-2">
+                            <span>${a[i].Ticketinfo}</span>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                `
             } 
         }
     }

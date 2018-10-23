@@ -33,7 +33,7 @@ gulp.task('copyHTML', function(){
 gulp.task('jade', function() {
     // var YOUR_LOCALS = {};
    
-    gulp.src('./source/*.jade')
+    gulp.src('./source/**/*.jade')
       .pipe($.plumber())
       
       .pipe($.jade({

@@ -2,16 +2,16 @@ doctype html
 html(lang='en')
   head
     meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='viewport', content='width=device-width,height=device-height, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible', content='ie=edge')
     title 高雄旅遊資訊
     link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp', crossorigin='anonymous')
-    link(rel='stylesheet', href='css/style.css')
-    link(rel='stylesheet', href='css/reset.css')
-  body
+    link(rel='stylesheet', href='css/all.css')
+    
+body
     .header
-      .banner
-        h1 高雄旅遊資訊
+      .jumbotron.text-center.px-0.mb-0
+        h1.h1.text-white.font-weight-bold 高雄旅遊資訊
         form.filter(action='index.html')
           select#zone(name='place')
       ul.hotplace
@@ -20,12 +20,13 @@ html(lang='en')
         li(style='background-color: #FFA782') 三民區
         li(style='background-color: #F5D105') 新興區
         li(style='background-color: #559AC8') 美濃區
-    .main
+    .main.pt-5.container
       .seperator
         i.fas.fa-chevron-circle-down
-      .place-name
-      ul.place-detail
-    .footer
+      .place-name.py-3
+      .place-detail
+        .row
+    .footer.py-4.mt-auto
       p(style='color:white') 高雄旅遊網
       p(style='color:#FFD366') 資料來源：高雄市政府
     script(src='js/all.js')

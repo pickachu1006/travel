@@ -1,0 +1,107 @@
+@import 'bootstrap'
+@import reset
+@import font
+@import clear
+@import grid
+@import variable
+@import centerer
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+.jumbotron
+  background-color: #fff
+  background-image: url(../images/Hero.png)
+  background-position: center center
+  background-repeat: no-repeat
+  border-radius: 0
+.filter
+  text-align: center
+  padding-top: 96px
+select
+    width: 414px
+    height: 48px
+    font-size: 18px
+    background: rgba(255, 255, 255, 0.7)
+    border: 3px solid #FFFFFF
+    border-radius: 3px
+.hotplace
+  text-align: center
+  width: 800px
+  margin: -30px auto 0 auto
+  background-color: #FFFFFF
+  box-shadow: 0 1px 3px 0
+  border-radius: 5px
+  li
+    margin: 0 0 18px 51px
+    display: inline-block
+    text-align: center
+    padding: 11px 0
+    width: 130px
+    font-size: 20px
+    font-family: PingFangTC-Regular
+    color: #FFFFFF
+    border-radius: 5px
+    cursor: pointer
+  p
+    font-size: 18px
+    font-family: AppleSystemUIFont
+    padding: 20px 0 16px 26px
++pad
+  .hotplace
+    width: auto
+    margin: 0
+    li
+      margin: 10px
+      display: inline-block
+      padding: 11px 0
+      width: 20%
+    p
+      padding: 20px 0 16px 26px
++iphone
+  .jumbotron
+    background-image: url(../images/the-urban-landscape-1698285.png)
+    background-position: center center
+    background-repeat: no-repeat
+    padding: 3rem 0rem
+  select
+    width: 300px
+    height: 48px
+  .hotplace
+    display: none
+
+.seperator
+  position: relative
+  height: 2px
+  border: 1px solid #559AC8
+i
+  color: #559AC8
+  background-color: #fff
+  +centerer
+
+.place-name
+  font-size: 36px
+  color: #8A82CC
+  font-family: SFNSDisplay
+  text-align: center
+.card-img-top
+  height: 155px
+.top-text
+  position: absolute
+  top: 110px
+  font-family: SFNSDisplay
+  font-size: 24px
+  color: #FFFFFF
+  .small
+    font-family: PingFangTC-Regular
+    font-size: 16px
+    color: #FFFFFF
+
+.footer
+  background-color: #559AC8
+  p
+    text-align: center
+    font-size: 14px
+    font-family: AppleSystemUIFont
+    letter-spacing: 5px
