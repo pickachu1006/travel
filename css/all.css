@@ -7734,10 +7734,9 @@ body {
   min-height: 100vh; }
 
 .jumbotron {
-  background-color: #fff;
   background-image: url(../images/Hero.png);
   background-position: center center;
-  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0; }
 
 .filter {
@@ -7778,7 +7777,7 @@ select {
   font-family: AppleSystemUIFont;
   padding: 20px 0 16px 26px; }
 
-@media (max-width: 768px) {
+@media (max-width: 812px) {
   .hotplace {
     width: auto;
     margin: 0; }
