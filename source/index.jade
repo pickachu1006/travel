@@ -34,17 +34,18 @@ html(lang='en')
     link(rel='stylesheet', href='css/all.css')
     
 body
-    .header
-      .jumbotron.text-center.px-0.mb-0
-        h1.h1.text-white.font-weight-bold 高雄旅遊資訊
-        form.filter(action='index.html')
-          select#zone(name='place')
-      ul.hotplace
-        p 熱門行政區
-        li(style='background-color: #8A82CC') 苓雅區
-        li(style='background-color: #FFA782') 三民區
-        li(style='background-color: #F5D105') 新興區
-        li(style='background-color: #559AC8') 美濃區
+    .container.p-0
+      .header
+        .jumbotron.text-center.px-0.mb-0
+          h1.h1.text-white.font-weight-bold 高雄旅遊資訊
+          form.filter(action='index.html')
+            select#zone(name='place')
+        ul.hotplace
+          p 熱門行政區
+          li(style='background-color: #8A82CC') 苓雅區
+          li(style='background-color: #FFA782') 三民區
+          li(style='background-color: #F5D105') 新興區
+          li(style='background-color: #559AC8') 美濃區
     .main.pt-5.container
       .seperator
         i.fas.fa-chevron-circle-down
